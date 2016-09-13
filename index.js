@@ -14,6 +14,10 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.get('/peanuts', function (req, res) {
   res.json(peanuts)
 })
+app.get('/peanuts/:id', function (req, res) {
+  var foundPeanut = peanuts[req.params.id]
+  res.json(foundPeanut)
+})
 
 // CREATE: POST
 app.post('/peanuts', function (req, res) {
