@@ -14,6 +14,15 @@ app.get('/peanuts', function (req, res) {
   res.json(peanuts)
 })
 
+app.post('/peanuts', function (req, res) {
+  var newPeanut = {
+    name: req.body.name,
+    cost: req.body.cost
+  }
+  peanuts.push(newPeanut)
+  res.json(newPeanut)
+})
+
 app.listen(3000, () => {
   console.log('Server Listening on port 3000')
 })
