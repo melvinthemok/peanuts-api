@@ -20,7 +20,14 @@ app.post('/peanuts', function (req, res) {
     cost: req.body.cost
   }
   peanuts.push(newPeanut)
-  res.json(newPeanut)
+  setTimeout(function () {
+    res.json(newPeanut)
+  }, 3000)
+})
+
+app.delete('/peanuts/:id', function (req, res) {
+  peanuts.splice(req.params.id,1)
+  res.json({message: 'success'})
 })
 
 app.listen(3000, () => {

@@ -2,7 +2,7 @@
 
 returns peanuts
 
-```GET /peanuts``` returns list of all peanuts
-```POST /peanuts``` create a new peanut
+- ```GET /peanuts``` returns list of all peanuts
+- ```POST /peanuts``` create a new peanut
 
-[Peanuts Client Example](https://github.com/jeremiahalex/peanuts-client) 
+[Peanuts Client Example](https://github.com/jeremiahalex/peanuts-client)
