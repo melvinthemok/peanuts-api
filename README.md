@@ -2,4 +2,4 @@
 
 returns peanuts
 
-```GET /peanuts``` returns all list of all peanuts
+```GET /peanuts``` returns list of all peanuts
