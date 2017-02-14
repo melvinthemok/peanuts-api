@@ -1,10 +1,11 @@
-var express = require('express')
-var bodyParser = require('body-parser')
-var cors = require('cors')
-var app = express()
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const app = express()
+const port = process.env.PORT || 3000
 
 // If we represent our peanuts as an object then we can use ids as the keys to look up the correct peanut later
-var peanuts = {
+const peanuts = {
   1: { name: 'salted', cost: 2.5, id: 1 },
   2: { name: 'dry roasted', cost: 3.5, id: 2 }
 }
@@ -62,6 +63,6 @@ app.put('/peanuts/:id', function (req, res) {
   res.json(foundPeanut)
 })
 
-app.listen(3000, () => {
-  console.log('Server Listening on port 3000')
+app.listen(port, () => {
+  console.log(`Server Listening on port ${port}`)
 })
