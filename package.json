@@ -2,7 +2,6 @@
   "name": "peanuts-api",
   "version": "1.0.0",
   "description": "A simple API that returns Peanuts",
-  "repository": "https://github.com/wdi-sg/peanuts-api",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

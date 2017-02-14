@@ -1,0 +1,7 @@
+{
+  "name": "peanuts-api",
+  "description": "A simple API that returns Peanuts",
+  "repository": "https://github.com/wdi-sg/peanuts-api",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3c/ARS_peanuts.jpg",
+  "keywords": ["node", "express", "peanuts"]
+}
