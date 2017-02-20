@@ -12,7 +12,7 @@ const peanuts = {
 // we can create a variable to track the next id to allocate to a new peanut
 var nextID = 3
 
-app.use(cors())
+// app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}))
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
